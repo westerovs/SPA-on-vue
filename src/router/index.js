@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+// import List from '../components/List';
+// import Task from '../components/Task';
 
 Vue.use(VueRouter)
 
@@ -9,7 +11,18 @@ Vue.use(VueRouter)
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/list',
+    name: 'List',
+    component: () => import('../components/List.vue')
+  },
+  {
+    path: '/task/:id',
+    name: 'Task',
+    component: () => import('../components/Task.vue')
   }
+
 ]
 
 const router = new VueRouter({

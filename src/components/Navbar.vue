@@ -2,13 +2,13 @@
     <nav class="nav">
         <ul>
             <router-link to="/" tag="li" exact active-class="active">
-                <a href="#">Tasks</a>
+                <a href="#">Home</a>
             </router-link>
-            <router-link to="/one" tag="li" active-class="active">
-                <a href="#">One</a>
+            <router-link to="/list" tag="li" active-class="active">
+                <a href="#">List</a>
             </router-link>
-            <router-link to="/two" tag="li" active-class="active">
-                <a href="#">Two</a>
+            <router-link to="/task" tag="li" active-class="active">
+                <a href="#">Task</a>
             </router-link>
         </ul>
     </nav>
@@ -38,6 +38,8 @@ export default {
     }
 
     li {
+        min-width: 100px;
+        text-align: center;
         border: 1px solid white;
         list-style-type: none;
         transition: 0.3s;
