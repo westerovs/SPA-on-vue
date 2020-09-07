@@ -59,7 +59,11 @@
           status: 'active',
           date: this.date
         }
+
         console.log(task);
+
+        // передаём задачу в vuex
+        this.$store.dispatch('createTask', task)
       },
     }
   }
