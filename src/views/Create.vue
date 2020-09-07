@@ -61,9 +61,10 @@
         }
 
         console.log(task);
-
         // передаём задачу в vuex
         this.$store.dispatch('createTask', task)
+        // переходим на страницу задачи
+        this.$router.push('/list')
       },
     }
   }

@@ -2,14 +2,14 @@
     <nav class="nav">
         <ul>
             <router-link to="/" tag="li" exact active-class="active">
-                <a href="#">Home</a>
+                <a href="#">Create</a>
             </router-link>
             <router-link to="/list" tag="li" active-class="active">
                 <a href="#">List</a>
             </router-link>
-            <router-link to="/task" tag="li" active-class="active">
+            <!-- <router-link to="/task" tag="li" active-class="active">
                 <a href="#">Task</a>
-            </router-link>
+            </router-link> -->
         </ul>
     </nav>
 </template>
@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
     .nav {
-        width: 100%;
+        width: 100vw;
         height: 100px;
         background-color: blue;
     }

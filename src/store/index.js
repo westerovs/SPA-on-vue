@@ -31,6 +31,9 @@ export default new Vuex.Store({
       commit('createTask', task)
     }
   },
-  modules: {
+  getters: {
+    // 4
+    // функция где получаю state и возвращаю поле tasks
+    tasks: (s) => s.tasks
   }
 })

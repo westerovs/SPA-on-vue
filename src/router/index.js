@@ -12,12 +12,12 @@ Vue.use(VueRouter)
   {
     path: '/list',
     name: 'List',
-    component: () => import('../components/List.vue')
+    component: () => import('../views/List.vue')
   },
   {
     path: '/task/:id',
     name: 'Task',
-    component: () => import('../components/Task.vue')
+    component: () => import('../views/Task.vue')
   }
 
 ]
