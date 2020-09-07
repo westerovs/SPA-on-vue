@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-// import List from '../components/List';
-// import Task from '../components/Task';
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'create',
+    component: () => import('../views/Create.vue')
   },
   {
     path: '/list',

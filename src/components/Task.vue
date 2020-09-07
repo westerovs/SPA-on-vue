@@ -1,12 +1,11 @@
 <template>
-    <h1>Task</h1>
-
+    <h1>TASK</h1>
 </template>
 
 <script>
-export default {
+    export default {
 
-}
+    }
 </script>
 
 <style scoped>

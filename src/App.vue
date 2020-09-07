@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import Navbar from './components/Navbar';
+  import Navbar from '@/components/Navbar';
 
 
   export default {
@@ -29,5 +29,9 @@
     background-color: rgb(119, 114, 167);
     color: white;
     font-family: sans-serif;
+  }
+
+  h1 {
+    text-align: center;
   }
 </style>
